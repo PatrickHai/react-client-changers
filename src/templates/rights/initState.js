@@ -1,4 +1,6 @@
 let right = {
-  data: {}
+  data: {
+    use_note: []
+  }
 };
 export default right;

@@ -2,10 +2,10 @@ let HOST;
 let enviroment = 'dev';
 switch (enviroment) {
   case 'product':
-    HOST = 'http://10.182.88.196:8080/server';
+    HOST = 'http://123.57.56.168:9000';
     break;
   default:
-    HOST = 'http://localhost:9000';
+    HOST = 'http://123.57.56.168:9000';
     break;
 }
 export default HOST ;

@@ -9,13 +9,13 @@ class Textblocks extends React.Component{
                       <span>{this.props.title}</span>
                   </h3>
                   <ul className={this.props.ulstyle}>
-{                      /*<div id="description">
+                      <div id="description">
                         {
                           this.props.dialogs.map((dialog) => (
                             <p key={dialog}>{dialog}</p>
                           ))
                         }
-                      </div>*/}
+                      </div>
                   </ul>
               </div>
           </div>

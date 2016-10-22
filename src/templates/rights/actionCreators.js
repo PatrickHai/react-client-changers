@@ -6,8 +6,8 @@ export function loadComponents(id){
   id =  id ? id : 5;
   return dispatch => {
     fetchRight(id).then(res => {
-      if(res.status === '200'){
-        let action = {type: types.LOAD_COMPONENTS, data: JSON.parse(res.data).data};
+      if(res.status === 200){
+        let action = {type: types.LOAD_COMPONENTS, data: res.data};
         dispatch(action);
       }else{
         // console.log('Ajax call failed!');
@@ -22,7 +22,7 @@ export function loadComponents(id){
 }
 
 function fetchRight(id){
-  let url = `${HOST}/api/test/${id}`;
+  let url = `${HOST}/api/rights/${id}`;
   return fetch(url,{
             method:'GET',
             mode:'cors',

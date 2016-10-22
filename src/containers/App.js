@@ -18,7 +18,6 @@ class App extends React.Component{
     this.init();
   }
   componentDidUpdate() {
-    this.init();
   }
   getId(){
     let id ;
@@ -35,9 +34,9 @@ class App extends React.Component{
     return (
         <div>
           <ImageBox style="head-box" url={this.props.data.banner} name={this.props.data.name}/>
-          <Summary title={this.props.data.name} sub_title={this.props.data.summary}/>
+          {/*<Summary title={this.props.data.name} sub_title={this.props.data.summary}/>
           <FormContent url="http://apitest.changker.com/html/benefit/platform/5" method="POST" />
-          <Content data={this.props.data} />
+          <Content data={this.props.data} />*/}
         </div>
     );
   }
@@ -52,6 +51,7 @@ App.propTypes = {
 
 export default connect(
   state => {
+    console.log('checking',state.rights.data);
     return {data:state.rights.data};
   },
   dispatch => ({actions: bindActionCreators(actions, dispatch)})
