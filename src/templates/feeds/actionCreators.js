@@ -1,28 +1,27 @@
-import * as types from './actions';
 import fetch from 'isomorphic-fetch';
-import HOST from '../../config.js';
+import HOST from '../../config';
+import * as types from './actions';
 
 export function loadComponents(id){
-  id =  id ? id : 5;
   return dispatch => {
-    fetchRight(id).then(res => {
+    fetchFeed(id).then(res => {
       if(res.code === 0){
         let action = {type: types.LOAD_COMPONENTS, data: res.data};
         dispatch(action);
       }else{
-        // console.log('Ajax call failed!');
+        console.log('Ajax call failed!');
       }
     }).catch(err => {
       if(err){
-        // console.log('Ajax call failed!');
+        console.log('Ajax call failed!');
         throw err;
       }
     });
   };
 }
 
-function fetchRight(id){
-  let url = `${HOST}/api/rights/${id}`;
+function fetchFeed(id){
+  let url = `${HOST}/api/feeds/${id}`;
   return fetch(url,{
             method:'GET',
             mode:'cors',
@@ -34,4 +33,3 @@ function fetchRight(id){
            return res.json();
          });
 }
-

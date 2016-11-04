@@ -10,10 +10,4 @@ class ImageBox extends React.Component {
   }
 }
 
-ImageBox.propTypes = {
-  style: PropTypes.string,
-  url: PropTypes.string,
-  name: PropTypes.string
-};
-
 export default ImageBox;

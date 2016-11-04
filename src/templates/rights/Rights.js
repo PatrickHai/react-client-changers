@@ -1,16 +1,18 @@
 import React, {PropTypes} from 'react';
 import {connect} from 'react-redux';
-import ImageBox from '../components/ImageBox';
-import Summary from '../components/Summary';
-import FormContent from '../components/FormContent';
-import Content from '../components/Content';
-import * as actions from '../templates/rights/actionCreators'; 
+import ImageBox from '../../components/ImageBox';
+import Share from '../../components/Share';
+import Summary from '../../components/Summary';
+import FormContent from '../../components/FormContent';
+import Content from '../../components/Content';
+import * as actionCreators from './actionCreators'; 
 import {bindActionCreators} from 'redux';
-import '../styles/base.css';
-import '../styles/template.css';
+import '../../styles/base.css';
+import '../../styles/template.css';
+import '../../styles/base_react.css';
 
 
-class App extends React.Component{
+class Rights extends React.Component{
   constructor(props) {
     super(props);
   }
@@ -32,17 +34,18 @@ class App extends React.Component{
   }
   render(){
     return (
-        <div>
+        <div className="benefit-body">
           <ImageBox style="head-box" url={this.props.data.banner} name={this.props.data.name}/>
           <Summary title={this.props.data.name} sub_title={this.props.data.summary}/>
           <FormContent url="http://apitest.changker.com/html/benefit/platform/5" method="POST" />
           <Content data={this.props.data} />
+          <Share />
         </div>
     );
   }
 }
 
-App.propTypes = {
+Rights.propTypes = {
   id: PropTypes.string,
   data: PropTypes.object,
   params: PropTypes.object.isRequired,
@@ -51,9 +54,8 @@ App.propTypes = {
 
 export default connect(
   state => {
-    console.log('checking',state.rights.data);
     return {data:state.rights.data};
   },
-  dispatch => ({actions: bindActionCreators(actions, dispatch)})
-)(App);
+  dispatch => ({actions: bindActionCreators(actionCreators, dispatch)})
+)(Rights);
 

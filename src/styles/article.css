@@ -1,0 +1,69 @@
+/*头部*/
+.article{ }
+.article header{ position:relative; }
+.article header .img_wrap{ min-height:6.875rem; max-height:15.625rem; overflow:hidden; }
+.article header img{ width:100%; }
+.article .title{ padding:0.9375rem; position:absolute; bottom:0; box-sizing:border-box; width:100%; color:#FFF; }
+.article .title h1{ margin-bottom:0.625rem; }
+.article .title .tag_c{ margin-left:0.625rem; vertical-align: 1px; }
+.article header .btn_back,
+.article header .btn_more{ position:absolute; top:0.625rem; width:1.875rem; z-index:20; height:1.875rem; border-radius:0.1875rem; background-color:rgba(0,0,0,.4); }
+.article header .btn_back{ left:0.625rem; }
+.article header .btn_more{ right:0.625rem; }
+/*正文块*/
+.article .inscription{ background:#f8f8f8; box-shadow: 0 -3.125rem 6.25rem rgba(0,0,0,.5); line-height:1.5; padding:0 0.9375rem; }
+.article .inscription p{ border-bottom:1px solid #dbdbdb; padding:0.9375rem 0; }
+.article article:first-of-type h2{ margin-bottom:0.625rem; }
+.article article:first-of-type p{ line-height:1.5; margin-bottom:0.3125rem;width:100%;overflow:hidden;text-overflow:ellipsis;}
+.article .topic_list li{ margin-right:0.625rem; margin-top:0.625rem; }
+
+
+/*转发评论赞*/
+.handle_box{ position: fixed; bottom:0; left:0; width: 100%; background:#f8f8f8; text-align:center; box-sizing: border-box; }
+.handle_box a{ padding:0.9375rem 0; }
+.handle_box a *{ vertical-align: middle; display: inline-block; color:#9a9a9a; margin:0 0.125rem; }
+.handle_box a:active{ color:#9a9a9a; opacity:.8; }
+/*评论模块*/
+.tab_com{ overflow:hidden; margin-bottom:0.9375rem; }
+.tab_com a{ position:relative; padding:0.9375rem 0; border-bottom:1px solid #c4c9cd; color:#9a9a9a; margin-top:-0.9375rem; }
+.tab_com a:last-of-type{ text-align:right; }
+.tab_com .cur{ color:#00aeff; }
+.tab_com .cur:after{ position:absolute; bottom:-0.5625rem; width:0.625rem; height: 0rem; border:1px solid #c4c9cd; background:#FFF; content: ""; font-size:0; line-height: 0; -webkit-transform:rotate(45deg); transform:rotate(45deg); }
+.tab_com a:first-of-type.cur:after{ left:0.625rem; }
+.tab_com a:last-of-type.cur:after{ right:1.25rem; }
+
+.comment_list li:not(:last-child){ border-bottom:1px solid #c4c9cd; padding-bottom:0.9375rem; margin-bottom: 0.9375rem; }
+.comment_list .pic_wrap{ width: 2.5rem; height: 2.5rem; overflow:hidden; margin-right:0.9375rem; border-radius: 0.1875rem; }
+.comment_list .pic_wrap img{ width:100%; }
+.comment_list .user_name{ white-space:nowrap; overflow:hidden; }
+.comment_list .user_name .txt_cut{ max-width:70%; }
+.comment_list .user_name *{ display:inline-block; vertical-align:middle; margin-right:0.3125rem; margin-bottom: 0.125rem; }
+.comment_list .user_info{ margin-bottom:0.3125rem; }
+.comment_list .user_info span{ margin-right:0.1875rem; }
+.comment_list .user_com{ line-height:1.3; }
+.W_innerWrap img{width:100%}
+.W_innerWrap p{line-height:150%;}
+
+
+.footer{padding: 0rem 0; min-height: 7.5rem; position: relative;; background-color: #f8f8f8;overflow:hidden;}
+.footer .logo{position: absolute; top: 1.0rem; left: 1.0rem; height: 3.0rem; width: 3.0rem;}
+.footer .logo img{height: 3.0rem; width: 3.0rem; border-radius:.5rem;}
+.footer .info{padding-left: 5.0rem;padding-top:1rem;}
+.footer .info-center{text-align: center; padding: 0rem;}
+.footer .info .appname{font-size: 1rem; color:#393939; font-weight: bold; height: 1.0rem; line-height: 1.0rem;}
+.footer .info .appdesc{margin-top: 1.0rem; font-size: 0.6rem; color:#9a9a9a; height: 1.0rem; line-height: 1.0rem;}
+.footer .info-center .appdesc{margin-top: 1.0rem; font-size: 1.0rem; color:#5d5d5d; height: 2.0rem; line-height: 2.0rem;}
+.footer .info-center .img{height:5rem;}
+.footer .info-center .img img{ width:100%;padding-bottom:10rem;height:auto}
+.footer .button{position: absolute; top: 1.8rem; right: 1.5rem; height: 2rem; width: 6rem; line-height: 2.0rem; border-radius: .5rem; color: white; background-color: #00aeff; text-align: center;font-size:1rem;}
+
+
+.footer{ bottom: 0; left: 0;  min-height: 5.0rem; background-color: #f8f8f8;width:100%;}
+.footer .logo{position: absolute; top: 1.0rem; left: 1.0rem; height: 2.5rem; width: 2.5rem;}
+.footer .logo img{height: 2.5rem; width: 100%; border-radius:.5rem;}
+.footer .info{padding-left: 4.0rem;font-size:2.4rem; padding-top: 1rem;}
+.footer .info-center{text-align: center; padding: 1.0rem;}
+.footer .info .appname{font-size: 0.8125rem; color:#393939; font-weight: bold; height: 1.0rem; line-height: 1.0rem;}
+.footer .info .appdesc{margin-top: 0.0rem; font-size: 0.7rem; color:#9a9a9a; height: 2.0rem; line-height: 2.0rem;}
+.footer .info-center img{width: 100%; position: relative; margin: auto; display: block;}
+.footer .button{position: absolute; font-size:0.8rem;top: 1.4rem; right: 0.5rem; margin-right: 0rem; height: 1.9rem; width: 5rem; line-height: 2.0rem; border-radius: .5rem; color: white; background-color: #00aeff; text-align: center;}

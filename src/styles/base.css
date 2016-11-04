@@ -220,6 +220,3 @@ header.W_scroll_list + article .W_innerWrap:first-child:after{ right:0; border-t
 .layer_dl a:nth-of-type(2){width:2.1875rem;height: 2.1875rem;text-align:right;}
 .layer_dl a:nth-of-type(2) i{margin-top:0.75rem;}
 
-.hide {display:none;}
-.show {display:block;}
-

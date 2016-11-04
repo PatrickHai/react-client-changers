@@ -23,10 +23,4 @@ class Textblocks extends React.Component{
   }
 }
 
-Textblocks.propTypes = {
-  title: PropTypes.string,
-  ulstyle: PropTypes.string,
-  dialogs: PropTypes.array
-};
-
 export default Textblocks;

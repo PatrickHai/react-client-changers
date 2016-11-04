@@ -1,0 +1,27 @@
+.hide {display:none;}
+.show {display:block;}
+
+.show_more {
+  width: 100%;
+  text-align: center;
+  line-height: 2.5rem;
+  color: #37618e; 
+}
+
+.collect {
+  width: 100%;
+  text-align: center;
+  line-height: 2.5rem;
+  color: #37618e; 
+}
+
+body{
+  padding-bottom: 2.5rem;
+}
+
+.feed-body {
+  position: absolute;
+  min-height:100%;
+  width:100%;
+  font-size: 0.875rem;
+}

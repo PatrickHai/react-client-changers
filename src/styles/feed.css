@@ -1,0 +1,149 @@
+.article_exp header{ padding:0.625rem; }
+.article_exp .img_wrap,
+.article_exp .img_wrap img{ overflow:hidden; margin-right:0.625rem; width:2.375rem; height:2.375rem; border-radius: 0.1875rem; }
+.article_exp .box_col p{ margin-bottom:0.25rem; line-height: 1.2; }
+.article_exp .icon_R{ margin-left:0.3125rem; vertical-align: -0.3125rem; }
+.article_exp .main p{ margin-bottom:0.3125rem; padding:0 0.625rem; color:#4c4e50; line-height:1.5; }
+.article_exp .main .wrap{ overflow:hidden; margin-bottom:0.3125rem; /*max-height:13.125rem; */width:100%; }
+.article_exp .main .wrap img{ width:100%; }
+.article_exp .card_ht{ margin-bottom:0.625rem; padding:0.625rem; border:1px dashed #b8b8b8; border-width:1px 0 1px 0; }
+.article_exp .card_ht:active{ opacity: .8; }
+
+.article_exp .card_ht em{ margin:0 0.625rem 0 0.3125rem; }
+.article_exp .com{ padding:0 0.625rem 1.25rem; }
+.article_exp .com span:first-child{ margin-right:0.9375rem; }
+
+
+
+.subject{margin: 1.0rem; padding: 1.0rem 0; border-top:.1rem dotted #ccc; border-bottom:.1rem dotted #ccc; height: 2.0rem; position: relative;}
+.subject .flight-logo{display: block; float: left; height: 1.0rem;}
+.subject .flight-name{display: block; float: left; color: #00aeff; font-size: 0.8rem; line-height: 1.0rem; height: 1.0rem;padding-left:0.2rem;}
+.subject .flight-airport{display: block; color:#9a9a9a; font-size: 0.4rem; height: 1.0rem; padding-left: 0rem; line-height: 2.8rem; clear: left;}
+.subject .flight-airline{float: right; text-align: right; min-width: 10rem;}
+.subject .flight-airline-name{display: block; color: #9a9a9a; font-size:0.4rem; height: 1.0rem; line-height: 2.8rem;}
+.subject .flight-airline-review{display: block; float: right; padding: 0 0.2rem; margin-left: 0.8rem; margin-top: 0.8rem; font-size:1.4rem; height: 1.0rem;}
+.subject .flight-aircraft{display: block; font-size:0.8rem; height: 1.0rem; line-height: 1.0rem;}
+.subject .flight-aircraft-lying{  display: block;float: right;padding: 0.2rem 0.3rem;margin-left: 1.0rem;  font-size: 0.625rem;  line-height: 0.625rem;  border-radius: 0.3rem;  color: white;  background-color: #00aeff; }
+
+.subject .hotel-logo{width:3.0rem; height: 3.0rem; position: absolute; top: 0.5rem; left: 0.0rem; outline: 1px solid #e8e8e8;}
+.subject .hotel{padding-left: 3.3rem;  position: relative;  top: -0.5rem;}
+.subject .hotel-name{font-size:0.6rem; font-weight: bold; display: block; height: 1.2rem; line-height: 1.2rem;}
+.subject .hotel-category{margin-top: 0.25rem;font-size:0.6rem; float: left; font-weight: bold; display: block; width:5rem; text-align: center; height: 1.2rem; line-height: 1.2rem; border-radius: 0.3rem; color:white;}
+.subject .hotel-score{display: none;}
+.subject .hotel-score-item{color: orange; line-height: 1.0rem; font-size: 0.8rem; float: right; text-align: right; padding-right: 0.4rem;}
+.subject .hotel-score-value{color: white; font-weight: bold; height: 0.4rem; font-size: 0.6rem; line-height: 0.4rem; text-align: center; float: right; border-radius: 0.3rem; padding: 0.4rem;}
+
+.subject .shop-count{font-size: 0.5rem;color: gray;display: block;margin-top: 0.375rem;}
+
+.count{margin: 1.0rem 1.0rem 3.0rem 1.0rem; height: 3rem;}
+.count span{font-size:2.2rem; color: #808d98; display: block; float: right; margin-left: 4.8rem;}
+
+.footer{position:absolute; bottom: 0; left: 0;  min-height: 5.0rem; background-color: #f8f8f8;width:100%;}
+.footer .logo{position: absolute; top: 1.0rem; left: 1.0rem; height: 2.5rem; width: 2.5rem;}
+.footer .logo img{height: 2.5rem; width: 100%; border-radius:.5rem;}
+.footer .info{padding-left: 4.0rem;font-size:2.4rem; padding-top: 1rem;}
+.footer .info-center{text-align: center; padding: 1.0rem;}
+.footer .info .appname{font-size: 0.8125rem; color:#393939; font-weight: bold; height: 1.0rem; line-height: 1.0rem;}
+.footer .info .appdesc{margin-top: 0.0rem; font-size: 0.7rem; color:#9a9a9a; height: 2.0rem; line-height: 2.0rem;}
+.footer .info-center img{width: 100%; position: relative; margin: auto; display: block;}
+.footer .button{position: absolute; font-size:0.8rem;top: 1.4rem; right: 0.5rem; margin-right: 0rem; height: 1.9rem; width: 5rem; line-height: 2.0rem; border-radius: .5rem; color: white; background-color: #00aeff; text-align: center;}
+
+/*浮层*/
+.W_layer{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.8);z-index:999;}
+.W_layer .inner{position:absolute;top:50%;left:15%;width:70%;height:6.875rem;background:rgba(255,255,255,.96);border-radius: 0.625rem;text-align:center;box-shadow:1px 2px 12px #000}
+.W_layer .inner .layer_btn{border-top:1px solid rgba(132,132,132,.3);}
+.W_layer .inner .layer_btn a{display:block;line-height:2.6875rem;font-size:1.0rem;text-decoration: none;color:#3fb8fe;}
+.W_layer .inner .con{height: 4.25rem;overflow:hidden;box-sizing:content-box;padding:0 1.0rem;line-height:4.25rem}
+
+.icon_R {
+    height: 1rem;
+    width: 1rem;
+    position: relative;
+    top: -0.1rem;
+    vertical-align: middle;
+}
+.rights-logo {
+    width: 8rem !important;
+}
+.rights {
+    padding-left: 8rem !important;
+}
+
+.rights-logo {
+    width: 8rem !important;
+}
+.rights {
+    padding-left: 8rem !important;
+}
+
+.comments {
+  position: relative;
+  background-color: #FFF;
+  height: auto;
+  margin: 0.15rem 0;
+}
+.comment{
+  overflow: hidden;
+  position: relative;
+  padding: .2rem .75rem;
+  /*width: 18.95rem;*/
+}
+.comment_text {
+  font-size: 0.65rem;
+  position: relative;
+  padding: 0.3rem 0;
+  left: 2.075rem;
+  width: 90%;
+}
+.com_title {
+  position: relative;
+  top: 0.95rem;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+}
+.likes {
+  opacity: 0.5;
+  float: left;
+}
+.coms {
+  float: right;
+  color: #00B2EE;
+}
+.line_title{  
+  position: relative;
+  background: #CCCCCC;
+  height: 0.05rem;
+  opacity: 0.5;
+  top: 1.25rem;
+}
+.line{  
+  position: relative;
+  background: #CCCCCC;
+  height: 0.05rem;
+  opacity: 0.5;
+}
+
+.img_wrap_com img{ 
+  overflow:hidden; 
+  margin-right:0.625rem; 
+  width:1.45rem; 
+  height:1.45rem; 
+  border-radius: 0.1875rem; 
+}
+.box_col_com p{ 
+  margin-bottom:0.25rem; 
+  line-height: 0.9rem; 
+  font-size: 0.65rem 
+}
+.icon_R_com{ 
+    width:.65rem; 
+    height:.65rem; 
+    position: relative;
+    top: -0.05rem;
+    vertical-align: middle;
+    margin: auto 0.08rem;
+}
+
+.txt_xs { font-size: 0.55rem; }
+.opacity6 {opacity: 0.6}
+
