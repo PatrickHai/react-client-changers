@@ -1,4 +1,4 @@
-import React, {PropTypes} from 'react';
+import React from 'react';
 
 
 class Summary extends React.Component{
@@ -15,9 +15,5 @@ class Summary extends React.Component{
   }
 }
 
-Summary.propTypes = {
-  title: PropTypes.string,
-  sub_title: PropTypes.string
-};
 
 export default Summary;

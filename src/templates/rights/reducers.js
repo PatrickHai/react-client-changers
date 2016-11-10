@@ -9,6 +9,9 @@ export default function rightsReducer(state = initState, action){
     case types.LOAD_COMPONENTS:
       newState.data = action.data;
       return newState;
+    case types.LOAD_FEEDS:
+      newState.feeds = action.feeds;
+      return newState;
     default:
       return state;
   }

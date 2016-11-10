@@ -1,1 +1,2 @@
 export const LOAD_COMPONENTS = 'LOAD_COMPONENTS';
+export const LOAD_FEEDS = 'LOAD_FEEDS';

@@ -1,4 +1,4 @@
-import React, {PropTypes} from 'react';
+import React from 'react';
 
 class ButtonBox extends React.Component{
   render(){
@@ -9,12 +9,4 @@ class ButtonBox extends React.Component{
     );
   }
 }
-
-ButtonBox.propTypes = {
-  href: PropTypes.string,
-  id: PropTypes.string,
-  style: PropTypes.string,
-  text: PropTypes.string
-};
-
 export default ButtonBox;

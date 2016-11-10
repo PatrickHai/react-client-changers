@@ -1,4 +1,4 @@
-import React, {PropTypes} from 'react';
+import React from 'react';
 
 class SelectBox extends React.Component{
   render(){
@@ -18,9 +18,5 @@ class SelectBox extends React.Component{
     );
   }
 }
-
-SelectBox.propTypes = {
-  title: PropTypes.string
-};
 
 export default SelectBox;
