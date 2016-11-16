@@ -9,19 +9,11 @@ export default {
     if(sessionStorage.user){
       return JSON.parse(sessionStorage.user);
     }else{
-      return null;
+      return {};
     }
   },
   setUser:function(user){
     sessionStorage.user = JSON.stringify(user);
-  },
-  gotoLogin:function(nextState,replace){
-    replace({
-      pathname:'/auth/login'
-    })
-  },
-  requireLogin:function(nextState){
-    console.log('requireLogin');
   },
   logout: function (cb) {
     delete sessionStorage.token;
@@ -32,7 +24,11 @@ export default {
     return !!sessionStorage.token
   },
   getHeaders: function() {
-    return { Authorization: sessionStorage.token };
+    return {
+      uid: this.getUser().id,
+      Authorization: sessionStorage.token,
+      'Content-Type':'application/json;charset:utf-8'
+    };
   },
 }
 

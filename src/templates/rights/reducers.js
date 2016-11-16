@@ -12,6 +12,13 @@ export default function rightsReducer(state = initState, action){
     case types.LOAD_FEEDS:
       newState.feeds = action.feeds;
       return newState;
+    case types.LOAD_FORM:
+      newState.form = action.form;
+      return newState;
+    case types.GRAB_RIGHT_SUCCEED:
+      console.log(newState);
+      newState.form.grab = action.grab;
+      return newState;
     default:
       return state;
   }

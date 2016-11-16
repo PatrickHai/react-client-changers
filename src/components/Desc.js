@@ -24,7 +24,6 @@ class Desc extends React.Component{
     });
   }
   render(){
-    let _this = this;
     return (
     <div className="special_details content">
       <div className="special_details_container">
@@ -33,10 +32,10 @@ class Desc extends React.Component{
           <div id="description" className={this.state.description}>
             <div dangerouslySetInnerHTML={{__html: this.props.content}} />
           </div>
-          <p className={this.state.show_more} onClick={_this.showMore.bind(_this)}>
+          <p className={this.state.show_more} onClick={this.showMore.bind(this)}>
               全文<i></i>
           </p>
-          <p className={this.state.collect} onClick={_this.collect.bind(_this)}>
+          <p className={this.state.collect} onClick={this.collect.bind(this)}>
               收起<i></i>
           </p>
         </ul>

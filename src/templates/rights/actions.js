@@ -1,2 +1,4 @@
 export const LOAD_COMPONENTS = 'LOAD_COMPONENTS';
 export const LOAD_FEEDS = 'LOAD_FEEDS';
+export const LOAD_FORM = 'LOAD_FORM';
+export const GRAB_RIGHT_SUCCEED = 'GRAB_RIGHT_SUCCEED';

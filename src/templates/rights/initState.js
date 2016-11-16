@@ -2,6 +2,9 @@ let right = {
   data: {
     use_note: []
   },
-  feeds: []
+  feeds: [],
+  form: {
+    grab: {}
+  }
 };
 export default right;
