@@ -101,3 +101,17 @@ export function store(id){
            return res.json();
          });
 }
+
+export function share(){
+  let url = `${HOST}/api/share/wechat`;
+  return fetch(url,{
+            method:'GET',
+            mode:'cors',
+            headers:{
+              'Content-Type':'application/json;charset:utf-8'
+            }
+         })
+         .then(res=>{
+           return res.json();
+         });
+}

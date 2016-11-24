@@ -5,6 +5,7 @@ import configureStore from './store/configureStore';
 import { Router, browserHistory } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
 import routes from './routes';
+import weixin from './jweixin-1.0.0'
 
 const store = configureStore();
 const history = syncHistoryWithStore(browserHistory, store);

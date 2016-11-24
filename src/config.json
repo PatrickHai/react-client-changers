@@ -1,18 +1,28 @@
 {
-  "init": [
-    {"name": "pageTitle", "props": {"name": "页面标题内容"}, "desc": "页面标题"},
-    {"name": "Banner", "props":{"url": ""}, "desc": "顶部图片"},
-    {"name": "ImageBox", "props":{"url": "", "store": "", "type": 1}, "desc":"内容图片"},
-    {"name": "Dialog", "props":{"content": ""}, "desc": "介绍文字"},
-    {"name": "textTitle", "props":{"name": "常客体验金卡权益", "level": 1}, "desc": "文字标题"},
-    {"name": "ButtonBox", "props":{"bottom": true, "href": "url", "id": "id"}, "desc": "按钮"}
-  ],
-  "result": [
-      {"name": "pageTitle", "props": {"name": "patrick's test tiltle"}, "desc": "页面标题"},
-      {"name": "ImageBox", "props":{"url": "https://img.changker.com/4a/ad/51/4aad5118ac7c385adb397e030102d799", "top": true}, "desc": "顶部图片"},
-      {"name": "Dialog", "props":{"content": "终说再见，我们感怀的也许看起来是喜达屋的变化，但又何尝不是我们自己的点点滴滴，这些年，回头看看，那些记忆。"}, "desc": "介绍文字"},
-      {"name": "ImageBox", "props":{"url": "", "store": "3", "type": 1}, "desc":"内容图片"},
-      {"name": "ImageBox", "props":{"url": "", "store": "4", "type": 1}, "desc":"内容图片"},
-      {"name": "ImageBox", "props":{"url": "", "store": "5", "type": 1}, "desc":"内容图片"}
-    ]
-}
+    "data": [
+            {"name": "pageTitle", "props": {"name": "推广落地页标题"}, "desc": "页面标题"},
+            {"name": "ImageBox", "props":{"url": "https://img.changker.com/4a/ad/51/4aad5118ac7c385adb397e030102d799", "top": true}, "desc": "顶部图片"},
+            {"name": "Heading", "props":{"content": "常客体验金卡权益", "level": 1}, "desc": "段落标题"},
+            {"name": "Dialog", "props":{"content": "HUAWEI Mate 9用户激活“常客”客户端后自动获取常客体验金卡权益（3个月），权益内容包括：专车出行服务、餐饮优先预定、私人活动邀请、热门赛事参与等。"}, "desc": "介绍文字"},
+            {"name": "ImageBox", "props":{"url": "https://img.changker.com/4a/ad/51/4aad5118ac7c385adb397e030102d799"}, "desc":"内容图片"},
+            {"name": "Heading", "props":{"content": "机场快速安检通道权益", "level": 2}, "desc": "段落标题"},
+            {"name": "Dialog", "props":{"content": "常客为 HUAWEI Mate9用户提供机场快速安全通道（CIP）服务，目前常客与全国12座机场达成协议，精英用户可持常客CIP权益码通行，无需等待。"}, "desc": "介绍文字"},
+            {"name": "ImageBox", "props":{"url": "https://img.changker.com/4a/ad/51/4aad5118ac7c385adb397e030102d799"}, "desc":"内容图片"},
+            {"name": "Heading", "props":{"content": "常客：源于商务旅行，服务中产精英", "level": 2}, "desc": "段落标题"},
+            {"name": "Dialog", "props":{"content": "常客为 HUAWEI Mate9用户提供机场快速安全通道（CIP）服务，目前常客与全国12座机场达成协议，精英用户可持常客CIP权益码通行，无需等待。"}, "desc": "介绍文字"},
+            {"name": "ButtonBox", "props": {"text": "认证会籍", "bottom": true, "href": "引导安装链接"}, "desc": "吸底按钮"}
+        ]
+  }
+
+
+/*  {
+      "type": 1,//1餐饮  2商品
+      "data": [
+              {"name": "pageTitle", "props": {"name": "patrick's test tiltle"}, "desc": "页面标题"},
+              {"name": "ImageBox", "props":{"url": "https://img.changker.com/4a/ad/51/4aad5118ac7c385adb397e030102d799", "top": true}, "desc": "顶部图片"},
+              {"name": "Dialog", "props":{"content": "终说再见，我们感怀的也许看起来是喜达屋的变化，但又何尝不是我们自己的点点滴滴，这些年，回头看看，那些记忆。"}, "desc": "介绍文字"},
+              {"name": "ImageBox", "props":{"url": "", "store": "3"}, "desc":"内容图片"},
+              {"name": "ImageBox", "props":{"url": "", "store": "4"}, "desc":"内容图片"},
+              {"name": "ImageBox", "props":{"url": "", "store": "5"}, "desc":"内容图片"}
+          ]
+  }*/

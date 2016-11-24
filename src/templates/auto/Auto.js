@@ -9,9 +9,18 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as actionCreators from './actionCreators';
 import '../../styles/auto.css';
+import * as wx from '../../wx';
+import * as fetcher from '../../fetcher';
+
 
 class Auto extends React.Component{
   componentWillMount(){
+    fetcher.share().then((res) => {
+      wx.share.share_appid = res.data.appid;
+      wx.share.share_noncestr = res.data.noncestr;
+      wx.share.share_sign = res.data.sign;
+      wx.share.share_timestamp = res.data.timestamp;
+    });
     this.props.actions.loadComponents(this.props.params.id);
   }
   determine(obj){

@@ -1,19 +1,23 @@
+export let share = {
+  share_image: "http://img.changker.com/e0/02/dc/e002dc9c9046714275ee5682e059b216",
+  share_title: "常客懂你，忙碌意义",
+  share_content: "测试内容"
+};
 
 wx.config({
   debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
-  appId: share_appid, // 必填，公众号的唯一标识
-  timestamp: share_timestamp, // 必填，生成签名的时间戳
-  nonceStr: share_noncestr, // 必填，生成签名的随机串
-  signature: share_sign,// 必填，签名，见附录1
+  appId: share.share_appid, // 必填，公众号的唯一标识
+  timestamp: share.share_timestamp, // 必填，生成签名的时间戳
+  nonceStr: share.share_noncestr, // 必填，生成签名的随机串
+  signature: share.share_sign,// 必填，签名，见附录1
   jsApiList: ['checkJsApi','scanQRCode','onMenuShareAppMessage','onMenuShareTimeline'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
 });
 
-
 wx.ready(function(){
   wx.onMenuShareTimeline({//朋友圈
-      title: share_title, // 分享标题
+      title: share.share_title, // 分享标题
       link: "", // 分享链接
-      imgUrl: share_image, // 分享图标
+      imgUrl: share.share_image, // 分享图标
       type: '', // 分享类型,music、video或link，不填默认为link
       dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
       success: function () { 
@@ -27,10 +31,10 @@ wx.ready(function(){
       }
   });
   wx.onMenuShareAppMessage({//分享好友
-      title: share_title, // 分享标题
-      desc: share_content, // 分享描述
+      title: share.share_title, // 分享标题
+      desc: share.share_content, // 分享描述
       link: '', // 分享链接
-      imgUrl: share_image, // 分享图标
+      imgUrl: share.share_image, // 分享图标
       type: '', // 分享类型,music、video或link，不填默认为link
       dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
       success: function () { 
