@@ -30,6 +30,20 @@ export function fetchRight(id){
          });
 }
 
+export function fetchAuto(id){
+  let url = `${HOST}/api/auto/${id}`;
+  return fetch(url,{
+            method:'GET',
+            mode:'cors',
+            headers:{
+              'Content-Type':'application/json;charset:utf-8'
+            }
+         })
+         .then(res=>{
+           return res.json();
+         });
+}
+
 export function fetchFeeds(){
   let url = `${HOST}/api/feeds`;
   let headers = auth.getHeaders();
@@ -74,3 +88,16 @@ export function grabRight(id){
   })
 }
 
+export function store(id){
+  let url = `${HOST}/api/store/${id}`;
+  return fetch(url,{
+            method:'GET',
+            mode:'cors',
+            headers:{
+              'Content-Type':'application/json;charset:utf-8'
+            }
+         })
+         .then(res=>{
+           return res.json();
+         });
+}

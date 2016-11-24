@@ -1,0 +1,1 @@
+export const IMGBASE = 'https://img.changker.com/'

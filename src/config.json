@@ -1,0 +1,18 @@
+{
+  "init": [
+    {"name": "pageTitle", "props": {"name": "页面标题内容"}, "desc": "页面标题"},
+    {"name": "Banner", "props":{"url": ""}, "desc": "顶部图片"},
+    {"name": "ImageBox", "props":{"url": "", "store": "", "type": 1}, "desc":"内容图片"},
+    {"name": "Dialog", "props":{"content": ""}, "desc": "介绍文字"},
+    {"name": "textTitle", "props":{"name": "常客体验金卡权益", "level": 1}, "desc": "文字标题"},
+    {"name": "ButtonBox", "props":{"bottom": true, "href": "url", "id": "id"}, "desc": "按钮"}
+  ],
+  "result": [
+      {"name": "pageTitle", "props": {"name": "patrick's test tiltle"}, "desc": "页面标题"},
+      {"name": "ImageBox", "props":{"url": "https://img.changker.com/4a/ad/51/4aad5118ac7c385adb397e030102d799", "top": true}, "desc": "顶部图片"},
+      {"name": "Dialog", "props":{"content": "终说再见，我们感怀的也许看起来是喜达屋的变化，但又何尝不是我们自己的点点滴滴，这些年，回头看看，那些记忆。"}, "desc": "介绍文字"},
+      {"name": "ImageBox", "props":{"url": "", "store": "3", "type": 1}, "desc":"内容图片"},
+      {"name": "ImageBox", "props":{"url": "", "store": "4", "type": 1}, "desc":"内容图片"},
+      {"name": "ImageBox", "props":{"url": "", "store": "5", "type": 1}, "desc":"内容图片"}
+    ]
+}
